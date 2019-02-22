@@ -1,3 +1,4 @@
 fn main() {
-    println!("Hello, world 123456789!");
+    const MANIFEST: &'static str = env!("CARGO_MANIFEST_DIR");
+    println!("Manifest Dir {}", MANIFEST);
 }
